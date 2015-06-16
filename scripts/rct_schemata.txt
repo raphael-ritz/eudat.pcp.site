@@ -1,0 +1,73 @@
+
+Model:  rct.storageresource
+Fields:  [u'preserve_until', u'users', u'linked_resources', u'storage_type', u'tape', u'services', u'disk', u'size']
+
+Model:  rct.operatingsystem
+Fields:  [u'vendor', u'description', u'name', u'longname']
+
+Model:  rct.storageclass
+Fields:  [u'uuid', u'link', u'copies', u'name']
+
+Model:  rct.contactdata
+Fields:  [u'website', u'first_name', u'last_name', u'uuid', u'rct_user', u'phone', u'address', u'organization', u'email']
+
+Model:  rct.community
+Fields:  [u'uuid', u'admins', u'name', u'representative']
+
+Model:  auth.permission
+Fields:  [u'codename', u'name', u'content_type']
+
+Model:  contenttypes.contenttype
+Fields:  [u'model', u'name', u'app_label']
+
+Model:  south.migrationhistory
+Fields:  [u'applied', u'app_name', u'migration']
+
+Model:  rct.storagespaceresource
+Fields:  [u'users', u'max_space', u'max_objects', u'linked_resources', u'storage_class', u'services', u'cost_factor', u'preserve_until', u'type']
+
+Model:  rct.resourcerequest
+Fields:  [u'website', u'startdate', u'uuid', u'ticketid', u'enddate', u'description', u'created', u'modified', u'community', u'project', u'requestor', u'state', u'deployers', u'preferred_providers', u'name']
+
+Model:  rct.resourcerequeststorage
+Fields:  [u'storage_type', u'preserve_until', u'request', u'uuid', u'size']
+
+Model:  rct.project
+Fields:  [u'website', u'uuid', u'community', u'name', u'contact', u'description']
+
+Model:  authtoken.token
+Fields:  [u'user', u'created']
+
+Model:  rct.she
+Fields:  [u'account', u'rootaccess', u'description', u'firewall_policy', u'terms_of_use', u'contact', u'details', u'provider', u'uuid', u'setup_procedure', u'name']
+
+Model:  admin.logentry
+Fields:  [u'action_flag', u'action_time', u'object_repr', u'object_id', u'change_message', u'user', u'content_type']
+
+Model:  auth.group
+Fields:  [u'name', u'permissions']
+
+Model:  rct.provider
+Fields:  [u'website', u'communities_secondary', u'used_tape', u'committed_disk', u'description', u'supported_os', u'committed_cores', u'country', u'committed_tape', u'uuid', u'communities_primary', u'used_disk', u'admins', u'contact', u'getaccount', u'name']
+
+Model:  auth.user
+Fields:  [u'username', u'first_name', u'last_name', u'is_active', u'is_superuser', u'is_staff', u'last_login', u'groups', u'user_permissions', u'password', u'email', u'date_joined']
+
+Model:  sessions.session
+Fields:  [u'session_data', u'expire_date']
+
+Model:  rct.computeresource
+Fields:  [u'users', u'ip', u'hostname', u'storage', u'cpus', u'linked_resources', u'virtualization', u'memory', u'services', u'software', u'os', u'localdisk']
+
+Model:  rct.service
+Fields:  [u'url', u'name', u'uuid']
+
+Model:  rct.storagespaceaccountingrecord
+Fields:  [u'used_space', u'uuid', u'service', u'storagespace', u'measure_time', u'used_objects', u'submission_time']
+
+Model:  rct.resource
+Fields:  [u'uuid', u'description', u'created', u'request', u'modified', u'community', u'project', u'linked_resources', u'contact', u'provider', u'services', u'users', u'name']
+
+Model:  rct.resourcerequestcompute
+Fields:  [u'uuid', u'request', u'cpus', u'virtualization', u'memory', u'disk', u'software']
+
